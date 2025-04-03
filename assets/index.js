@@ -3,7 +3,7 @@ if ('serviceWorker' in navigator) {
     // Ждем, пока страница полностью загрузится
     window.addEventListener('load', () => {
         // Регистрируем сервис-воркер
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('/serviceworker.js')
             .then(registration => {
                 console.log('Service Worker зарегистрирован с областью:', registration.scope);
             })
