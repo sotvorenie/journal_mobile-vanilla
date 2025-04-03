@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <title>авторизация</title>
+
+        <link rel="manifest" href="manifest.json">
+
+        <script src="assets/jquery-3.7.1.min.js"></script>
+        <script src="assets/serviceworker.js" defer></script>
+      <script type="module" crossorigin src="assets/main-CspV23xE.js"></script>
+      <link rel="modulepreload" crossorigin href="assets/useUser-Bw_ovCZR.js">
+      <link rel="stylesheet" crossorigin href="assets/useUser-XrNYIIqV.css">
+      <link rel="stylesheet" crossorigin href="assets/main-C5q6eISJ.css">
+    </head>
+    <body>
+
+    <span class="message" data-js-message></span>
+
+    <div class="authorization" data-js-authorization>
+        <div class="swiper authorization__swiper" data-js-authorization-swiper>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide authorization__slide" data-js-authorization-slide>
+                    <p class="authorization__title h3">Войти</p>
+
+                    <form class="authorization__form form" novalidate data-js-authorization-form data-js-form>
+                        <div class="form__item" data-js-form-item>
+                            <input
+                                    class="input"
+                                    required
+                                    minlength="4"
+                                    aria-errormessage="logIn-login-errors"
+                                    placeholder="Логин"
+                                    data-js-authorization-input
+                            />
+                            <span class="field__errors" id="logIn-login-errors" data-js-form-field-errors></span>
+                        </div>
+                        <div class="form__item" data-js-form-item>
+                            <input
+                                    class="input"
+                                    required
+                                    minlength="4"
+                                    aria-errormessage="logIn-password-errors"
+                                    placeholder="Пароль"
+                                    data-js-authorization-input
+                            />
+                            <span class="field__errors" id="logIn-password-errors" data-js-form-field-errors></span>
+                        </div>
+                        <div class="form__btn-bar">
+                            <button class="form-btn button is-active" type="button" data-js-authorization-login>
+                                <span>Войти</span>
+                                <span class="loading loading--btn">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="hds-flight-icon--animation-loading">
+
+                                        <g fill="#6851b5" fill-rule="evenodd" clip-rule="evenodd">
+
+                                            <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z" opacity=".2"/>
+
+                                            <path d="M7.25.75A.75.75 0 018 0a8 8 0 018 8 .75.75 0 01-1.5 0A6.5 6.5 0 008 1.5a.75.75 0 01-.75-.75z"/>
+
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="authorization__info">
+                        <p class="authorization__info-text">Еще не зарегистрированы?</p>
+                        <button class="authorization__info-btn" type="button" data-js-authorization-to-registration>Перейти к регистрации</button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide authorization__slide" data-js-authorization-slide>
+                    <p class="authorization__title h3">Зарегистрироваться</p>
+
+                    <form class="authorization__form form" novalidate data-js-authorization-form data-js-form>
+                        <div class="form__item" data-js-form-item>
+                            <input
+                                    class="input"
+                                    required
+                                    minlength="4"
+                                    aria-errormessage="reg-login-errors"
+                                    placeholder="Логин"
+                                    data-js-authorization-input
+                            />
+                            <span class="field__errors" id="reg-login-errors" data-js-form-field-errors></span>
+                        </div>
+                        <div class="form__item" data-js-form-item>
+                            <input
+                                    class="input"
+                                    required
+                                    minlength="4"
+                                    aria-errormessage="reg-password-errors"
+                                    placeholder="Пароль"
+                                    data-js-authorization-input
+                            />
+                            <span class="field__errors" id="reg-password-errors" data-js-form-field-errors></span>
+                        </div>
+                        <div class="form__item" data-js-form-item>
+                            <input
+                                    class="input"
+                                    required
+                                    aria-errormessage="reg-organization-errors"
+                                    placeholder="Организация"
+                                    maxlength="100"
+                                    data-js-authorization-input
+                            />
+                            <span class="field__errors" id="reg-organization-errors" data-js-form-field-errors></span>
+                        </div>
+                        <div class="form__btn-bar">
+                            <button class="form-btn button is-active" type="button" data-js-authorization-registration>
+                                <span>Зарегистрироваться</span>
+                                <span class="loading loading--btn">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="hds-flight-icon--animation-loading">
+
+                                        <g fill="#6851b5" fill-rule="evenodd" clip-rule="evenodd">
+
+                                            <path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z" opacity=".2"/>
+
+                                            <path d="M7.25.75A.75.75 0 018 0a8 8 0 018 8 .75.75 0 01-1.5 0A6.5 6.5 0 008 1.5a.75.75 0 01-.75-.75z"/>
+
+                                        </g>
+
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
